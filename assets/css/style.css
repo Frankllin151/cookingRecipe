@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color:#484848;
+overflow-x: hidden;
+ /* height: 1800px;*/
+}
+/*header*/
+header{
+    width: 100%;
+    position:fixed;
+    top: 0;
+}
+.nv-heda{
+   
+    background-color: #fff;
+    padding: 15px 8px;
+    box-shadow: 0px 8px 8px 6px rgb(0 0 0 / 10%);
+  
+}
+.nav-ok{
+    padding: 0 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.juont{
+    color:#484848;
+}
+.juont a{
+    font-weight: bolder;
+    color: #484848;
+    text-decoration: none;
+}
+.juont a:hover{
+    transition: all 600ms ease-in-out;
+    color: #808080;
+}
+.ixon-log a{
+    text-decoration: none;
+    color:#484848;
+}
+.ixon-log h1{
+    font-size: 20px;
+}
+.jus-li-ul{
+    display: flex;
+    
+}
+.jus-li-ul li{
+    list-style-type: none;
+}
+.jus-li-ul a{
+    margin-left: 8px;
+    text-decoration: none;
+    color: #484848;
+}
+/*header end*/
+
+/**/
+.back-bakery{
+    
+    height: 490px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+   /* background-image: url(assets/image/bakerybackgorund.png);*/
+}
+.item-main{
+   margin: 10px;
+}
+.posi-rl{
+    position: relative;
+    top: -100px;
+    border-radius: 8px;
+   background-color: #f3f3f7;
+}
+.p-3:hover{
+    cursor: pointer;
+  
+}
+.p-3 a{
+    text-decoration: none;
+    color: #2a2a2a;
+}
+.p-3 img{
+    border-radius: 7px;
+    height: 190px;
+    width: 100%;
+}
+.p-3 p{
+    margin-top: 10px;
+}
+.recipe-mains{
+    padding: 0px 6%;
+}
+/* */
+/*bmhsection*/
+.bmhsection {
+    padding: 61px 0px;
+    background-color: #f3f3f7;
+}
+
+.img-kl-sl img {
+    width: 300px;
+    margin: 0 10px;
+    margin-top: 18px;
+    height: 200px;
+}
+.test-free{
+    border: 0;
+    box-shadow: 0px 8px 4px rgb(55, 55, 55);
+    padding: 12px 49px;
+    background-color: rgb(250, 235, 215);
+    margin: 0px 22px;
+}
+.test-free:focus{
+    border: 0;
+}
+.test-free:hover{
+border: 0;
+background-color: rgb(254, 215, 163);
+transition: 0.3s;
+}
+
+/*bmhsection end*/
+/*know-main-recipe*/
+.ososos{
+    margin: 30px;
+   
+}
+/*know-main-recipe end*/
+/*link-recipe*/
+.link-recipe{
+   
+    padding: 61px 0px;
+ background-color: #f3f3f7;
+}
+.gnititle{
+    display: flex;
+    justify-content: center;
+}
+.base-jusoncig h3{
+    font-weight: 500;
+}
+.base-jusoncig button{
+    margin-top: 20px;
+}
+.base-jusoncig p{
+    font-size: 14px;
+    margin-top: 30px;
+}
+/*link-recipe end*/
+/*/*questions mains */
+.question-mains{
+    margin-top: 40px;
+}
+.center-sp{
+    display: flex;
+    justify-content: center;
+}
+.something{
+    padding: 0px 52px;
+}
+.p-textf{
+  
+ display: flex;
+ justify-content: space-between;
+    margin-top: 20px;
+    
+  background-color: #f3f3f7;
+}
+.text-infomation{
+   display: none;
+   background-color: #ddd;
+    
+}
+.text-info-flex{
+    display: block !important;
+}
+
+/*carousel*/
+.clvb-ope{
+position: relative;
+padding: 15px;
+max-width: 640px;
+margin: 0 auto;
+}
+.galley-wrapper{
+    overflow-x: auto;
+  
+
+}
+.galley{
+    display: flex;
+    flex-flow: nowrap;
+    gap: 15px;
+}
+.arrow-rigth , .arrow-left{
+ position: absolute;
+ top: 0;
+left: 0;
+right: auto;
+bottom: 0;
+font-size: 20px;
+line-height: 250px;
+width: 40px;
+text-align: center;
+color: #fff;
+cursor: pointer;
+border: 0;
+background: linear-gradient(to left ,  transparent 0% , black 200%) ;
+opacity: 0.1;
+transition: all 600ms  ease-in-out;
+}
+.arrow-rigth{
+  
+  
+   left: auto;
+   right: 0;
+
+   background: linear-gradient(to right ,  transparent 0% , black 200%) ;
+}
+.arrow-left:hover , .arrow-rigth:hover{
+    opacity: 1;
+    
+}
+.item{
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    opacity: 0.6;
+    transition: all 600ms  ease-in-out;
+}
+.item img{
+     width: 250px;
+     height: 200px;
+border-radius:9px ;
+    }
+    .item .pab{
+        display: flex;
+        justify-content: center;
+    }
+.item p{
+    
+    font-weight: bolder;
+}
+.current-item{
+    opacity: 1;
+   
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.galley-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .galley-wrapper {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+/*carousel end*/
+
+/*questions mains end*/
+/*footer*/
+footer{
+    margin-top: 40px;
+    background-color: #f3f3f7;
+}
+.jiso-ojs{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.m-pl-sj{
+    padding: 37px 0px;
+    background-color: #ddd;
+}
+.ceter-psoi{
+    display: flex;
+    justify-content: center;
+}
+.title{
+    color:#484848;
+}
+.icones-pg{
+  padding-left: 30px;
+}
+.icones-pg a{
+    text-decoration: none;
+    color:#484848
+}
+.ceter-psoi h2{
+    margin-top: 10px;
+    font-size: 23px;
+}                     
+/*footer end*/

@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+/* pattern-ctlgo*/
+.pattern-ctlgo{
+    margin-top: 40px;
+    padding: 0px 19%;
+}
+.pagn-cl{
+   
+    display: flex;
+    
+}
+.browser-serach{
+ 
+    width: calc(30%  - 100px);
+}
+/**header*/
+.header-main{
+    box-shadow: 0px 8px 8px 6px rgb(0 0 0 / 10%);
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+.header-browser h1{
+ color: #100f0f00 !important;
+}
+.patterns-browser{
+
+    padding: 0px 9px;
+}
+.search-now{
+   display: none;
+    max-width: 110px;
+  
+    border-radius: 8px;
+    background-color: #f3f3f7;
+ margin-bottom: 8px;
+ padding: 0px 8px;
+}
+
+.search-now input{
+    background-color: #f3f3f7;
+    padding: 0px 8px;
+    width: 100%;
+    display: block;
+    outline: 0;
+    height: 15px;
+    border: 0;
+}
+.search-now input::placeholder{
+    font-size: 12px;
+}
+.recipe-search{
+    padding-left: 25px;
+    width: 100%;
+   
+}
+.ul-list li{
+    list-style-type: none;
+    margin-top: 10px;
+}
+.result-search{
+    color: #616161;
+    border-bottom: 1px solid #ccc;
+}
+.ul-list a{
+   
+    text-decoration: none;
+    color: #616161;
+
+}
+.text-muted{
+    border-radius: 8px;
+    border: 1px solid rgba(254, 214, 82, 0.666) !important;
+    background-color: rgba(254, 214, 82, 0.666) !important;
+    border: 0;
+    padding: 7px  7px;
+}
+
+.text-muted a{
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    text-decoration: none;
+    color: #616161;
+} 
+
+@media (min-width: 575.98px) { 
+    .browser-serach {
+        display: none;
+        width: calc(30% - 100px);
+    } 
+ }
+@media (min-width:768px)  {
+    .browser-serach {
+        display: none;
+        width: calc(30% - 100px);
+    }
+}
+@media (min-width:1200px)  {
+    .recipe-search {
+        padding-left: 118px;
+        width: 100%;
+    }
+    .browser-serach {
+        display: flex;
+        width: calc(30% - 100px);
+    }
+}
+@media (min-width:992px)  {
+    .recipe-search {
+        padding-left: 118px;
+        width: 100%;
+    }
+    .browser-serach {
+        display: block;
+        width: calc(30% - 100px);
+    }
+}

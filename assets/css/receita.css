@@ -1,0 +1,50 @@
+/*patterns*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #dcdcdc !important;
+    
+}
+.patterns-sction{
+    margin-top: 150px;
+    padding: 0 19%;
+}
+/*header*/
+.header-main{
+    box-shadow: 0px 8px 8px 6px rgb(0 0 0 / 10%);
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+/*header end*/
+/***/
+
+.caixa-ctn{
+  
+    padding: 15px 10px 15px 10px ;
+    
+   height: 800px;
+    
+    border-radius: 8px;
+   background-color: #fff;
+}
+.col-sm{
+   
+}
+#recipe-wrrite{
+    flex-direction: column;
+    display: flex;
+    margin-top: 48px;
+}
+.btn-ingrediente{
+    border: 0;
+    padding: 5px 0px;
+    margin-top: 20px;
+}
+.btn-ingrediente:focus{
+    border: 0;
+}

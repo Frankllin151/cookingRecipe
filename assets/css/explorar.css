@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**patterns*/
+body{
+  
+   
+}
+.pattenr-estrctu{
+    margin-top: 40px;
+    padding: 0px 25%;
+   
+}
+
+/*header*/
+.header-main{
+    box-shadow: 0px 8px 8px 6px rgb(0 0 0 / 10%);
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+/**header end*/
+/*carrosuel*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider-img img{
+    width: 100%;
+    height: 450px;
+}
+.slider-img {
+display: flex;
+overflow: hidden;
+
+}
+.slide img{
+   
+}
+.slide{
+    width: 100%;
+    height: 340px;
+}
+.slider-img .slide{
+    
+}
+
+/* carrousel  end*/
+.ver-all{
+   
+    border: 0;
+  background-color: #fff;
+}
+.ver-all a{
+
+    color: rgba(0, 0, 0, 0.666) !important;
+  text-decoration: none;
+    color: #000;
+}
+/*fff*/
+.cenrg{
+    width: 89%;
+    position: relative;
+padding: 15px;
+
+margin: 0 auto;
+}
+
+.all-card{
+    scroll-snap-type: x proximity;
+overflow-y: hidden;
+overflow-x: hidden;
+scroll-snap-type: x mandatory; 
+}
+.btn-primary{
+  color: #000;
+    border: 2px solid rgba(254, 214, 82, 0.666) !important;
+    background-color: rgba(254, 214, 82, 0.666) !important;
+}
+.cards{
+    
+    display: flex;
+flex-flow: nowrap;
+gap: 15px;
+
+
+}
+
+.card img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+.arrow-left, .arrow-rigth{
+ position: absolute;
+ top: -200px;
+ left: 0;
+ right: auto;
+ text-align: center;
+ border: 0;
+ color: #fff;
+ background-color: rgba(60, 57, 57, 0.5);
+ width: 40px;
+ height: 40px;
+ padding: 10px 10px;
+ border-radius: 100%;
+ opacity: 0.8;
+
+ 
+ transition: all 600ms  ease-in-out;
+}
+.arrow-left:hover, .arrow-rigth:hover{
+
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.arrow-rigth{
+left: auto;
+right: 0;
+opacity: 0.8;
+
+}
+.card-item{
+    opacity: 0.6;
+}
+.card-current{
+    opacity: 1;
+
+    scroll-snap-align: center;
+   transform: scale(1.1);
+}
+/*footer*/
+footer{
+    margin-top: 40px;
+    background-color: #f3f3f7;
+}
+.jiso-ojs{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.m-pl-sj{
+    padding: 37px 0px;
+    background-color: #ddd;
+}
+.ceter-psoi{
+    display: flex;
+    justify-content: center;
+}
+.title{
+    color:#484848;
+}
+.icones-pg{
+  padding-left: 30px;
+}
+.icones-pg a{
+    text-decoration: none;
+    color:#484848
+}
+.ceter-psoi h2{
+    margin-top: 10px;
+    font-size: 23px;
+}                     
