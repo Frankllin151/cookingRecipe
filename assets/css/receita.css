@@ -6,8 +6,12 @@
 
 }
 body{
-    background-color: #dcdcdc !important;
+    background-color: #eeeeee !important;
     
+}
+.header-main{
+    position: fixed;
+    top: 0;
 }
 .patterns-sction{
     margin-top: 150px;
@@ -27,10 +31,15 @@ body{
   
     padding: 15px 10px 15px 10px ;
     
-   height: 800px;
+ display: flex;
+
     
     border-radius: 8px;
    background-color: #fff;
+}
+.jus-donfig-caixa{
+  flex-direction: column !important;
+  display: flex !important;
 }
 .col-sm{
    
@@ -41,10 +50,54 @@ body{
     margin-top: 48px;
 }
 .btn-ingrediente{
-    border: 0;
+    border-radius: 8px;
+    background-color: #c0c0c0;
     padding: 5px 0px;
     margin-top: 20px;
 }
 .btn-ingrediente:focus{
     border: 0;
 }
+.ingredient-list {
+    text-align: left;
+
+  }
+.ingredient-list li{
+    font-weight: bolder;
+    font-size: 18px;
+    margin-top: 10px;
+} 
+
+
+  /*footer*/
+  footer{
+    margin-top: 40px;
+    background-color: #f3f3f7;
+}
+.jiso-ojs{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.m-pl-sj{
+    padding: 37px 0px;
+    background-color: #ddd;
+}
+.ceter-psoi{
+    display: flex;
+    justify-content: center;
+}
+.title{
+    color:#484848;
+}
+.icones-pg{
+  padding-left: 30px;
+}
+.icones-pg a{
+    text-decoration: none;
+    color:#484848
+}
+.ceter-psoi h2{
+    margin-top: 10px;
+    font-size: 23px;
+}                     
