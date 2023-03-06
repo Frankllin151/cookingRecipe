@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\AuthController;
+use Faker\Guesser\Name;
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth; 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +15,21 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+// dinamica
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/catalago', function(){
+    return view('explorarct');
+});
+//login 
 Route::post('/loginpost', [AuthController::class , 'loginpost'])->name('loginpost');
 Route::view('/login', 'login');
+Route::get('user-dasboard/{id}', function($id){
+    $user = Auth::user();
+    return view('user-dasboard', ['name' => $user->name]);
+   
+});
+// register
+Route::view('/register', 'register');
+Route::post('/register_data_post', [AuthController::class , 'registerPost'])->name('register_data_post');

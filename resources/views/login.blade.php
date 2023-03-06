@@ -18,8 +18,19 @@
                         <input type="password"  id="password" name="password" required >
                     </div>
                     <div>
+                        <?php
+                        /// Generate Token 
+                        $token = openssl_random_pseudo_bytes(16);
+                                  $token = bin2hex($token);
+                    
+                             
+                            ?>
+                        <input name="token_login" type="hidden" value="<?= $token ?>">
+                    </div>
+                    <div>
                         <button type="submit">Login</button>
                     </div>
+
     </form>
 </body>
 </html>
