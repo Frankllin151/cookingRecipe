@@ -3,7 +3,7 @@ Cooking Recipe and web software that has will have fun cooking recipes. still in
 
 --- system login 
  + done
- + token - stil development 
+ + token
  + check passsword
  + check if user it is logged
 
