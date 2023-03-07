@@ -21,7 +21,7 @@ class AuthController extends Controller{
              $token = DB::table('users')->select('token')->where('email' ,$emailUser)->first();
 
             $tokenString = $token->token;
-
+            
               if(Auth::attempt($credentials)){
 
                
@@ -34,7 +34,11 @@ class AuthController extends Controller{
                 if($tokenString === ""){
 
                   DB::table('users')->where('email' , $emailUser)->update(['token' => $tokeInput]);
+                  
+                   
 
+                  
+                 return redirect()->intended('/catalago');
                  
                } else{
                  return redirect('/catalago');
@@ -44,10 +48,10 @@ class AuthController extends Controller{
                   return redirect('/');
               }
                
-             //   $user_id = Auth::user()->id;
-
-
-              return redirect()->intended('/catalago');
+               
+                
+  
+           return redirect()->intended('/catalago');
 
              } else{
                  return redirect()->intended('/');

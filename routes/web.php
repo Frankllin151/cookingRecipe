@@ -20,14 +20,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/catalago', function(){
-    return view('explorarct');
+    $user = Auth::user(); 
+
+    if($user === null){
+        return view('explorarct');
+    } else{
+        return view('explorarct' , ['name' => $user->name] , ['id' => $user->id]);
+    }
+ 
 });
 //login 
 Route::post('/loginpost', [AuthController::class , 'loginpost'])->name('loginpost');
 Route::view('/login', 'login');
 Route::get('user-dasboard/{id}', function($id){
     $user = Auth::user();
-    return view('user-dasboard', ['name' => $user->name]);
+    return view('user-dasboard', ['name' => $user->name , 'id' => $user->id]);
    
 });
 // register
