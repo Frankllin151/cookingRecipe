@@ -25,7 +25,7 @@
               @endif
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/user-dasboard/{{$id}}">Minha lista</a></li>
+                  <li><a class="dropdown-item" href="/user-dasboard/{id}">Minha lista</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Assinatura</a></li>
                  

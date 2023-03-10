@@ -23,7 +23,12 @@
     <script type="text/javascript" src="assets/css/bootstrap-5.3.0/jquery-3.6.3.js"></script>
     <script type="text/javascript" src="assets/css/bootstrap-5.3.0/bootstrap.bundle.min.js"></script>
 </body>
-{{$id}}
+
+<form action="/updateToken" method="post">
+    @csrf
+ <input type="hidden" name="id_update" value="{{$id}}">
+ <input type="submit" value="Sair">
+</form>
 <script >
  // const getidUser = document.getElementById('id-user');
 //console.log(getidUser);

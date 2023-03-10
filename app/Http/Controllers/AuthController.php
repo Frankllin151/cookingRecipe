@@ -84,7 +84,10 @@ class AuthController extends Controller{
       return redirect('/catalago');
     }
 
-
+public function update_token(Request $request){
+  $id = $request->input('id_update'); 
+  DB::table('users')->where('id' , $id)->update(['token' => '']);
+}
 
 
 }
